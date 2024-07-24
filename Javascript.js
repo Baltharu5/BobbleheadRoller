@@ -17,7 +17,7 @@ function rollDice() {
 
   }
     document.getElementById("diceTotal").innerText = total
-  document.getElementById("diceCount").innerText = count
+  
 results = "<table>";
     for (var i = 0; i < myArray.length; i+=6 )
     {
@@ -64,7 +64,7 @@ for (let index = 0; index < array.length; index++) {
 } 
 
 if (winCon === 7){
-		document.getElementById("winning").innerText = "Exactly 7 rolls of 6! You Win!"
+		document.getElementById("winning").innerText = "Exactly 7 Sixes! You Win!"
             	}
        else{
        	document.getElementById("winning").innerText = " "
