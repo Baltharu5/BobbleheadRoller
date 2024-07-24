@@ -6,7 +6,6 @@ function rollDice() {
     var numDice = Number(document.getElementById("diceNum").value);
     var myArray = []
     
-    
   var total = 0
   var count = 0
   
@@ -32,10 +31,11 @@ results = "<table>";
     div.innerHTML = results;  
     
 
-let array = myArray
+let array = myArray;
   
 let oddNum = 0; 
 let evenNum = 0; 
+
   
 for (let index = 0; index < array.length; index++) { 
     if (array[index] % 2 == 0) { 
@@ -45,12 +45,14 @@ for (let index = 0; index < array.length; index++) {
         oddNum++; 
     } 
 } 
+
+
   
 // Printing the result 
 document.getElementById("evens").innerText = evenNum; 
 document.getElementById("odds").innerText = oddNum;
 
-    let winCon = 0;
+let winCon = 0;
 
 for (let index = 0; index < array.length; index++) { 
     if (array[index] === 6) { 
@@ -63,10 +65,10 @@ for (let index = 0; index < array.length; index++) {
 
 if (winCon === 7){
 		document.getElementById("winning").innerText = "Exactly 7 rolls of 6! You Win!"
-    }
-       else      {
+            	}
+       else{
        	document.getElementById("winning").innerText = ""
-    }
+            }
             
 console.log(winCon);
 
