@@ -61,6 +61,13 @@ for (let index = 0; index < array.length; index++) {
     } 
 } 
 
-if (winCon === 7){(document.getElementById("winning").innerText = "Exactly 7 rolls of 6! You Win!")}else{(document.getElementById("winning").innerText = "")}
-console.log(winCon)
+if (winCon === 7){
+		document.getElementById("winning").innerText = "Exactly 7 rolls of 6! You Win!"
+    }
+       else      {
+       	document.getElementById("winning").innerText = 
+    }
+            
+console.log(winCon);
+
 }
