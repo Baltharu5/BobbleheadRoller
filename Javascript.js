@@ -49,4 +49,18 @@ for (let index = 0; index < array.length; index++) {
 // Printing the result 
 document.getElementById("evens").innerText = evenNum; 
 document.getElementById("odds").innerText = oddNum;
+
+    let winCon = 0;
+
+for (let index = 0; index < array.length; index++) { 
+    if (array[index] === 6) { 
+        winCon++; 
+    } 
+    else { 
+        
+    } 
+} 
+
+if (winCon === 7){(document.getElementById("winning").innerText = "Exactly 7 rolls of 6! You Win!")}else{(document.getElementById("winning").innerText = "")}
+console.log(winCon)
 }
