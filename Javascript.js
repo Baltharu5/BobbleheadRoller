@@ -1,7 +1,11 @@
+var rollBtn = document.getElementById("rollBtn")
+rollBtn.addEventListener("click", rollDice);
+
 function rollDice() {
     var results = "";
     var numDice = Number(document.getElementById("diceNum").value);
     var myArray = []
+    
     
   var total = 0
   var count = 0
